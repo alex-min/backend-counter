@@ -7,9 +7,9 @@ redisScript.loadFromDir(`${__dirname}/redis_procedures`);
 module.exports = (request, response, cb) => {
   redisScript.run('increment_counter', [], [], function (error) {
     if (error) {
-      cb(error, 'unknown error occured')
+      cb(error, '"unknown error occured"')
     } else {
-      cb(null, 'ok')
+      cb(null, '"ok"')
     }
   })
 }

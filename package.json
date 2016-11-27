@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha --timeout 4000 spec/specHelper.js spec/unit/*.spec.js"
+    "test": "mocha --timeout 4000 spec/specHelper.js spec/unit/*.spec.js && spec/load_test.sh"
   },
   "repository": {
     "type": "git",
