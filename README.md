@@ -50,6 +50,7 @@ There is also a load test at spec/load_test.sh which is executed when runing the
 
 The project is using redis as a in-memory database and node as a the backend technology.
 The backend is decoupled from the database so any number of backend instances can be deployed within the same redis instance without any issues.
+
 The counter logic leaves on the database as a LUA procedure so there is no concurency issues on the backend side.
 Node has been chosen for consistency for the prototype since it's aready used on other backends.
 
