@@ -60,7 +60,7 @@ The docker images are currently optimised for development purpose but can also b
 To use this project in production without docker, some environement variables can be changed in production:
 
  - ```REDIS_URL=redis://username:password@example.com:5555/database```
-   if the backend runs with a REDIS_URL environement variable, it overides the redis configuration to use another redis instance.
+   if the backend runs with a ```REDIS_URL``` environement variable, it overides the redis configuration to use another redis instance.
  - ```PORT=80```
    by default, the backend runs on port 80 but the ```PORT``` environement variable can change that.
  - To avoid reloading, the server can use node directly instead of nodemon which reloads on changes.
