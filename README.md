@@ -1,7 +1,15 @@
 # Backend counter
 
 This project is a part of a prototype of an adserver.
-The main goal is to maintain a 
+The main goal is to maintain a counter which goes from 0 to 10 by incrementing it and then back to zero by decrementing it.
+
+There are two endpoints at the moment
+
+
+- ```/get``` increments the counter and return a json ```{"result":"ok"}```
+- ```/status``` returns the current counter value example: ```{"result": 4}```
+
+If the call succeed, the HTTP code will be 200, otherwise, it returns a 500 code.
 
 ## Project setup
 
@@ -32,7 +40,8 @@ There is also a load test at spec/load_test.sh which is executed when runing the
 
 The project is using redis as a in-memory database and node as a the backend technology.
 The backend is decoupled from the database so any number of backend instances can be deployed within the same redis instance without any issues.
-The counter logic leaves on the database as a LUA procedure so there is no concurency issues since redis is single threaded.
+The counter logic leaves on the database as a LUA procedure so there is no concurency issues on the backend side.
+
 
 ## Setup on production
 
