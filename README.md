@@ -20,7 +20,17 @@ To run the project, just execute
 ```shell
 docker-compose up
 ```
-in the project directory to get started.
+in the project directory to get started. The backend is then accessible on port 5001.
+
+You can try:
+
+```
+$ curl http://localhost:5001/get
+{"result":"ok"}
+$ curl http://localhost:5001/status
+{"result":1}
+```
+To get started.
 
 ## Tests
 
