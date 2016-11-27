@@ -1,0 +1,24 @@
+{
+  "name": "backend-counter",
+  "version": "0.0.1",
+  "description": "backend-counter",
+  "main": "index.js",
+  "dependencies": {
+    "redis": "^2.6.3",
+    "redis-scripto": "^0.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-min/backend-counter.git"
+  },
+  "author": "alex-min",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-min/backend-counter/issues"
+  },
+  "homepage": "https://github.com/alex-min/backend-counter#readme"
+}
